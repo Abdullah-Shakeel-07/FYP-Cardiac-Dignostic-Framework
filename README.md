@@ -16,5 +16,7 @@ publicly available cardiac MRI datasets.
 
 Dataset Links
 Data Science Bowl: https://www.kaggle.com/competitions/second-annual-data-science-bowl/data
+
 Sunnybrook 2009: http://www.cardiacatlas.org/studies/sunnybrook-cardiac-data/
+
 ACDC 2017: https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html
