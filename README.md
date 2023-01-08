@@ -35,7 +35,6 @@ used as loss function and adam as optimizer, performance was improved. The metri
 used for evaluating the results is accuracy. Our final UNET model consisted of
 1,177,649 trainable parameters.
 
-# How to use
 # Dependencies
 This example depends on the following libraries:
 
