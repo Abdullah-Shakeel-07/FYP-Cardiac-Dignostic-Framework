@@ -14,10 +14,43 @@ classification purpose i.e whether the patient is healthy or not, or if there ar
 him in the future regarding cardiac. The model will be tested on combination of well reputed
 publicly available cardiac MRI datasets.
 
-Dataset Links
+# Basic Info
+# Datasets
 
 Data Science Bowl: https://www.kaggle.com/competitions/second-annual-data-science-bowl/data
 
 Sunnybrook 2009: http://www.cardiacatlas.org/studies/sunnybrook-cardiac-data/
 
 ACDC 2017: https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html
+
+# Model
+Our final UNET model consists of 18 layers. Increasing layers above that didn’t lead
+to any improvement hence this setting was used for training. 8 layers are for the
+contraction path on the left side of UNET architecture whereas the rest of the layers
+are for expansion path. The performance of the model was evaluated with 16, 32, 64
+and 128 filters in order to achieve best results. Batch normalization was used after
+every convolution layer for improving the results. The model was tested using
+different hyperparameter settings. It was observed that when binary cross entropy was
+used as loss function and adam as optimizer, performance was improved. The metrics
+used for evaluating the results is accuracy. Our final UNET model consisted of
+1,177,649 trainable parameters.
+
+# How to use
+# Dependencies
+This example depends on the following libraries:
+
+1. numpy
+2. matplotlib
+3. pydicom
+4. Tensorflow
+5. Keras
+
+# How to use
+On running the script, the following steps will be performed:
+
+1. Datasets Extraction
+2. Contours Extraction
+3. Preprocessing
+4. Model training
+5. Model testing
+6. Patient-wise Ejection Fraction 
