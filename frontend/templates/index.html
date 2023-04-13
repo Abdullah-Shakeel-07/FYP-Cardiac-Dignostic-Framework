@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+		<!-- <script src="index.js"></script> -->
+		<title>Cardiac Dignostic Framework</title>
+		<!-- <style>
+		</style> -->
+		
+	</head>
+</head>
+<body>
+	<div class="h-screen bg-black grid place-items-center">
+        <div class="bg-red grid place-items-center" id="addmoreinfo">
+            <h1 id="ResHeading" class="text-slate-200 text-3xl font-bold animate-text">Cardiac Dignostic Framework</h1>
+			<h3 style="padding: 50px;" class="text-slate-200 text-3xl font-bold slide-left">
+				Ejection fraction is a measure of how well your heart is pumping blood. It is calculated by dividing the amount of blood pumped out of the heart's left ventricle (the main pumping chamber) by the total amount of blood in the ventricle at the end of diastole (when the heart is relaxed and filling with blood). The result is expressed as a percentage, with a normal ejection fraction ranging from 55% to 70%.</h3>
+        </div>
+    </div>
+	<div class="h-screen grid place-items-center" id="inpform">
+		<h1 style="text-align: center;" style="padding: 20px;" class="text-3xl font-bold slide-in">Welcome to the MRI Ejection Fraction Calculator!
+			<br><br><br>
+			Please upload MRI image below and click the "Calculate" button to determine your ejection fraction.
+		</h1>
+		<form method="POST" action="/upload" enctype="multipart/form-data">
+			<input type="file" name="file1" accept=".npy">
+			<input type="file" name="file2" accept=".npy">
+			<!-- <input type="submit" value="Upload"> -->
+
+			<!-- <div class="upload-btn-wrapper">
+				<button class="btn">Upload MRI Image</button>
+				<input type="file" name="file1" accept=".npy">
+
+				<button class="btn">Upload Pixels Spacing</button>
+				<input type="file" name="file2" accept=".npy">
+			</div> -->
+			<br><br>
+			<label class="upload-btn">
+				<input type="submit" value="Calculate">
+
+			</label>
+		</form>
+	</div>
+	
+</body>
+</html>

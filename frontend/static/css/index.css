@@ -1,0 +1,115 @@
+h1 {
+    font-family: 'Roboto Mono', monospace;
+  }
+  @keyframes colorchange {
+      0% {
+          color: lightskyblue;
+      }
+      50% {
+          color: lightcoral;
+      }
+      100% {
+          color: white;
+      }
+  }
+  .animate-text {
+      animation: colorchange 5s infinite;
+  }
+
+  .slide-left {
+  position: relative;
+  left: -100%;
+      animation: slide 2s forwards;
+  }
+
+  @keyframes slide {
+      to {
+          left: 0;
+      }
+  }
+
+  .slide-in {
+  position: relative;
+  right: -100%;
+  animation: slide-in 2s forwards;
+  }
+
+  @keyframes slide-in {
+      to {
+          right: 0%;
+      }
+  }
+
+  .text {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+.text.animate {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+.upload-btn {
+    /* display: inline-block; */
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #5c5c5c, #313131);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .upload-btn:hover {
+    background: linear-gradient(to bottom, #313131, #5c5c5c);
+  }
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 20px;
+    padding-top: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  
+  .btn {
+    border: 2px solid #7B68EE;
+    color: white;
+    background-color: #7B68EE;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #7B68EE;
+  }
+  
+  .upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }

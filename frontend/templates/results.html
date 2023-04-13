@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+		<title>Cardiac Dignostic Framework</title>
+		<style>
+			h1 {
+			  font-family: 'Roboto Mono', monospace;
+			}
+		</style>
+		
+	</head>
+</head>
+<body>
+	<div class="h-screen bg-black grid place-items-center">
+        <div class="bg-red grid place-items-center" id="addmoreinfo">
+			<br>
+			<h1 style="text-align: center;" style="padding: 20px;" class="text-slate-200 text-3xl font-bold slide-left">Welcome to the MRI Ejection Fraction Calculator!
+				<br><br>
+				<div class="image-container">
+					<img src="/static/MRI_image.png" width="210" height="211" style="margin-right: 3px;">
+					<img src="/static/MRI_contour.png" width="210" height="211">
+				  </div>
+				  <br>
+				<h1 class="text-slate-200 text-3xl font-bold slide-in">
+					Ejection Fraction Reference Ranges
+					<br><br>
+					Hyperdynamic: &gt; 75%
+					<br>
+					Normal: 55-70%
+					<br>
+					Borderline: 50-54%
+					<br>
+					Mildly Abnormal: 40-49%
+					<br>
+					Moderately Abnormal: 30-39%
+					<br>
+					Severely Abnormal: &lt; 30% 
+			    </h1>
+				<br>
+
+			</h1>
+            <h1 id="ResHeading" class="text-slate-200 text-3xl font-bold"><p>The predicted Ejection Fraction is: {{ output }}</p>
+			</h1>
+			<h1 style="text-align: center;" class="text-slate-200 text-3xl slide-left">
+				<br> Description<br>
+				Number of slice: {{slices}} <br>
+				Shape of each slice: {{shapes}} 
+			</h1>
+			
+        </div>
+    </div>
+	
+</body>
+</html>
