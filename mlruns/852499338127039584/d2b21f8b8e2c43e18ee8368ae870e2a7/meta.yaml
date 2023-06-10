@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Admin/Documents/MLOPS%20Project/mlruns/852499338127039584/d2b21f8b8e2c43e18ee8368ae870e2a7/artifacts
+end_time: 1685710807615
+entry_point_name: ''
+experiment_id: '852499338127039584'
+lifecycle_stage: active
+run_id: d2b21f8b8e2c43e18ee8368ae870e2a7
+run_name: mlops_project_example
+run_uuid: d2b21f8b8e2c43e18ee8368ae870e2a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685710764833
+status: 3
+tags: []
+user_id: Admin
