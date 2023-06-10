@@ -53,3 +53,8 @@ On running the script, the following steps will be performed:
 4. Model training
 5. Model testing
 6. Patient-wise Ejection Fraction 
+
+# Contributers
+Abdullah
+Ahmed
+Ali
