@@ -87,4 +87,4 @@ def upload():
     return render_template('results.html', output=EF, slices = no_image, shapes = shape)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run('0.0.0.0',debug=False)
