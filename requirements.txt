@@ -1,5 +1,0 @@
-mlflow
-numpy
-matplotlib
-tensorflow
-keras
