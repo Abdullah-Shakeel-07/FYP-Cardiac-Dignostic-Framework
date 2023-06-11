@@ -1,6 +1,6 @@
 version: '1'
 services:
   frontend:
-    build: .
+    build: ./frontend
     ports:
       - 5000:5000
