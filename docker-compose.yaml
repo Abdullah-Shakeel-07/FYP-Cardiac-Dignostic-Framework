@@ -1,0 +1,6 @@
+version: '1'
+services:
+  frontend:
+    build: .
+    ports:
+      - 5000:5000
