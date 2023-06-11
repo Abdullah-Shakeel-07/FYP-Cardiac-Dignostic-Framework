@@ -1,0 +1,4 @@
+outs:
+- md5: 46c503df32869cc9e1450ffab0685321
+  size: 4824352
+  path: model-tgs-salt.h5

@@ -1,0 +1,7 @@
+mlflow
+numpy
+matplotlib
+tensorflow
+keras
+keras_preprocessing
+opencv-python

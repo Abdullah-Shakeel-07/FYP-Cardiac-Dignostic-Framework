@@ -1,4 +1,4 @@
-# FYP-Cardiac Dignostic Framework
+# FYP-Cardiac Diagnostic Framework
 This repo contains the code of our final year project  which comes under the domain of computer vision and healthcare
 with primary focus on cardiac MRI. The main goal of the project is the automated diagnosis of
 cardiac issues using cardiac MRI. The diagnosis will be made on the basis of detection of end
@@ -51,5 +51,10 @@ On running the script, the following steps will be performed:
 2. Contours Extraction
 3. Preprocessing
 4. Model training
-5. Model testing
-6. Patient-wise Ejection Fraction 
+5. Model testing 
+6. Patient-wise Ejection Fraction
+
+# Contributers
+Abdullah
+Ahmed
+Ali
